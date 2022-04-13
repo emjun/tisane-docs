@@ -7,7 +7,7 @@ description: >
 lang: en-US
 
 baseurl: "/jekyll-doc-theme" # the subpath of your site, e.g. /blog/
-url: https://audreyseo.github.io/jekyll-doc-theme # the base hostname & protocol for your site
+url: https://audreyseo.github.io/jekyll-doc-theme-test # the base hostname & protocol for your site
 git_address: https://github.com/audreyseo/jekyll-doc-theme-test
 git_edit_address: https://github.com/audreyseo/jekyll-doc-theme-test/blob/gh-pages
 remote_theme: aksakalli.github.io/jekyll-doc-theme@gh-pages
