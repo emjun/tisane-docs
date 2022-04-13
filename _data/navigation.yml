@@ -1,0 +1,7 @@
+main:
+  - sectionid: "docs"
+    url: "/docs/home/"
+    title: "Docs"
+  - sectionid: "blog"
+    url: ""
+    title: "Blog"
