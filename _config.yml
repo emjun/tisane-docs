@@ -6,7 +6,7 @@ description: >
   providing documentation and blog post pages.
 lang: en-US
 
-baseurl: "/jekyll-doc-theme" # the subpath of your site, e.g. /blog/
+baseurl: "/jekyll-doc-theme-test" # the subpath of your site, e.g. /blog/
 url: https://audreyseo.github.io/jekyll-doc-theme-test # the base hostname & protocol for your site
 git_address: https://github.com/audreyseo/jekyll-doc-theme-test
 git_edit_address: https://github.com/audreyseo/jekyll-doc-theme-test/blob/gh-pages
