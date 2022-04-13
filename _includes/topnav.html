@@ -27,7 +27,7 @@
                   {% endif %}
 
                 {% endif %}
-                <li {% if page.sectionid == link.sectionid %} class="active" {% end if %}><a href="{{ domain }}{{ url }}">{{ link.title }}</a></li>
+                <li {% if page.sectionid == link.sectionid %} class="active" {% endif %}><a href="{{ domain }}{{ url }}">{{ link.title }}</a></li>
               {% endfor %}
                 <li {% if page.sectionid=='docs' %} class="active" {% endif %}><a href="{{ "/docs/home/" | relative_url }}">Docs</a></li>
                 <li {% if page.sectionid=='blog' %} class="active" {% endif %}><a href="{{ site.posts.first.url | relative_url }}">Blog</a></li>
