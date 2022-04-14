@@ -1,6 +1,6 @@
 main:
   - sectionid: "docs"
-    url: "/docs/home/"
+    url: "https://audreyseo.github.io/audreyseo-docs-test/src/html/index.html"
     title: "Docs"
   - sectionid: "blog"
     url: ""

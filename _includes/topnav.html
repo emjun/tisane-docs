@@ -22,15 +22,15 @@
                     {% assign domain = '' %}
                     {% assign url = site.posts.first.url | relative_url %}
                   {% else %}
-                    {% assign domain = base_path %}
+                    {% assign domain = site.baseurl %}
                     {% assign url = link.url %}
                   {% endif %}
 
                 {% endif %}
                 <li {% if page.sectionid == link.sectionid %} class="active" {% endif %}><a href="{{ domain }}{{ url }}">{{ link.title }}</a></li>
               {% endfor %}
-                <li {% if page.sectionid=='docs' %} class="active" {% endif %}><a href="{{ "/docs/home/" | relative_url }}">Docs</a></li>
-                <li {% if page.sectionid=='blog' %} class="active" {% endif %}><a href="{{ site.posts.first.url | relative_url }}">Blog</a></li>
+                <!-- <li {% if page.sectionid=='docs' %} class="active" {% endif %}><a href="{{ "/docs/home/" | relative_url }}">Docs</a></li>
+                <li {% if page.sectionid=='blog' %} class="active" {% endif %}><a href="{{ site.posts.first.url | relative_url }}">Blog</a></li> -->
             </ul>
             <div class="navbar-right">
                 <form class="navbar-form navbar-left">
