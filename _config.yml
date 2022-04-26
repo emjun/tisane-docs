@@ -1,15 +1,15 @@
 # Site settings
-title: Jekyll Doc Theme
-email: your-email@domain.com
+title: Tisane
+email: emjun@cs.washington.edu
 description: >
   Jekyll Template for Project Websites
   providing documentation and blog post pages.
 lang: en-US
 
-baseurl: "/jekyll-doc-theme-test" # the subpath of your site, e.g. /blog/
-url: https://audreyseo.github.io/jekyll-doc-theme-test # the base hostname & protocol for your site
-git_address: https://github.com/audreyseo/jekyll-doc-theme-test
-git_edit_address: https://github.com/audreyseo/jekyll-doc-theme-test/blob/gh-pages
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: https://tisane-stats.org # the base hostname & protocol for your site
+git_address: https://github.com/emjun/tisane # the actual tisane repo
+git_edit_address: https://github.com/emjun/tisane-docs/blob/gh-pages # where the site lives
 remote_theme: aksakalli.github.io/jekyll-doc-theme@gh-pages
 # theme options from https://bootswatch.com/3/
 # comment out this to use default Bootstrap
@@ -32,7 +32,7 @@ exclude:
   - .gitignore
   - README.md
   - vendor
-timezone: Europe/Berlin
+timezone: America/Los Angeles
 defaults:
 - scope:
     path: _posts
@@ -40,6 +40,12 @@ defaults:
   values:
     layout: post
     sectionid: blog
+- scope:
+    path: _pages
+    type: pages
+  values:
+    layout: page
+    sectionid: apage
 
 - scope:
     path: _docs
@@ -56,4 +62,7 @@ collections:
     output: true
   posts:
     permalink: /blog/:year/:month/:day/:title/
+    output: true
+  pages:
+    permalink: /:path/
     output: true

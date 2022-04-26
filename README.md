@@ -1,3 +1,14 @@
+# tisane-docs
+
+## Important files
+
+Here's a mapping of the important files:
+
+ - `_config.yml`: this is where a lot of the metadata for the site lives. Can also configure parts of the website here, define constants used in jekyll, etc.
+ - `_data/navigation.yml`: defines which tabs are listed in the top navigation bar
+ - `_pages/install.md`: where the installation instructions will go
+
+
 # Jekyll Doc Theme
 
 Go to [the website](https://aksakalli.github.io/jekyll-doc-theme/) for detailed information and demo.

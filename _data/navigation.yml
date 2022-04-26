@@ -1,7 +1,7 @@
 main:
   - sectionid: "docs"
-    url: "https://audreyseo.github.io/audreyseo-docs-test/src/html/index.html"
+    url: "https://tisane-stats.org/docs"
     title: "Docs"
-  - sectionid: "blog"
-    url: ""
-    title: "Blog"
+  - sectionid: "install"
+    url: "/install/"
+    title: "Install"
