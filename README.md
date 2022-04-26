@@ -1,12 +1,55 @@
 # tisane-docs
 
+TODOs:
+
+ - [ ] Fill out outline in `_about/research.md`
+ - [ ] Expand blurb in `_about/index.md`
+ - [ ] Create layout for Tisane team members
+ - [ ] Investigate a way to embed jupyter notebooks (at least as a patch for writing up more examples lol)
+
+
+Site structure (pages that have yet to be created have `()` after their relative URL):
+
+ - [ ] `/` (`index.md`):
+ - [ ] `/about` (`_about`)
+  - [ ] `/about/home/` (`/_about/index.md`): landing page for the About section
+  - [ ] `/about/team/` (`/_about/team_members.md`): short bios for all the Tisane developers
+  - [ ] `/about/research/` (`/_about/research.md`): about the formal research that has been done/will be done/maybe future work, as well as how to cite the project
+ - [x] `/docs`: this is actually hosted in the tisane repo
+ - [ ] `/install/` (`/_pages/install.md`): detailed installation instructions
+ - [ ] `/tutorial/` (need to make into its own section): detailed tutorial
+  - [ ] `/tutorial/home/` (): landing page for the Tutorial section, explaining the options
+  - [ ] `/tutorial/cli/` (): tutorial for using Tisane from the command line
+  - [ ] `/tutorial/notebook/` (): tutorial for using Tisane with Jupyter notebooks
+ - [ ] `/examples` (): (this is kind of a stretch goal, might be nice to have at least one example)
+
 ## Important files
 
-Here's a mapping of the important files:
+Here's a mapping of the important top-level files:
 
  - `_config.yml`: this is where a lot of the metadata for the site lives. Can also configure parts of the website here, define constants used in jekyll, etc.
- - `_data/navigation.yml`: defines which tabs are listed in the top navigation bar
+ - `_data/navigation.yml`: defines which tabs are listed in the top navigation bar. The `sectionid` should be the same as in `_config.yml`
  - `_pages/install.md`: where the installation instructions will go
+
+Files that are grouped into sections are covered in the following sub-sections.
+
+### About pages
+The layout of the about pages is determined by `_layouts/about.html`, which also relies on `_includes/about_nav.html`. The latter file creates an accordion-style side navigation bar. The contents of this bar is specified in `_data/about.yml`, in the `nav` object.
+
+The `_data/about.yml` also contains a `team` object, that will be used in the layout of all of the team members' bios. (I have not currently set up the actual little bio template.) The team members will be listed in the `about/team` page (which is specified by the `_about/team_members.md`) file.
+
+
+## Jekyll basics (because I always forget how to use Jekyll)
+Terms:
+
+ - "front matter": a YAML-style dictionary that is contained between `---` and `---` on `.html` and `.md` files. This can be used to set some constants that will be used for the page, such as the title of a page, or use the jekyll redirect-from plugin to make sure that pages have canonical URLs.
+
+To access the yml files in `_data`, use `site.data.<name of yml file without .yml>`.
+
+The files in `_layouts` provide template layouts for other files. The contents of a file using a template will be inserted wherever the `{{ contents }}` directive is in the layout. Layouts are used by specifying `layout: <my layout without .html extension>` in the "front matter" of a page.
+
+
+
 
 
 # Jekyll Doc Theme

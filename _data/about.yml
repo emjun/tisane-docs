@@ -1,0 +1,28 @@
+nav:
+  - title: Getting Started
+    pages:
+    - home
+    - team
+    - research
+
+  - title: Examples
+    pages:
+    - cheatsheet
+    - font-awesome
+    - bootstrap
+team:
+  - name: Eunice Jun
+    website: https://homes.cs.washington.edu/~emjun
+    photo: ""
+    role: ""
+    short_bio: ""
+  - name: Audrey Seo
+    website: https://audreyseo.github.io
+    photo: ""
+    role: ""
+    short_bio: ""
+  - name: Shreyash Nigam
+    website: ""
+    photo: ""
+    role: ""
+    short_bio: ""

@@ -46,7 +46,14 @@ defaults:
   values:
     layout: page
     sectionid: apage
-
+- scope:
+    path: _about
+    type: about
+  values:
+    layout: about
+    sectionid: about
+    seo:
+      type: "WebPage"
 - scope:
     path: _docs
     type: docs
@@ -65,4 +72,7 @@ collections:
     output: true
   pages:
     permalink: /:path/
+    output: true
+  about:
+    permalink: /:collection/:path/
     output: true
