@@ -1,7 +1,10 @@
 main:
   - sectionid: "docs"
-    url: "https://tisane-stats.org/docs"
+    url: "https://docs.tisane-stats.org"
     title: "Docs"
   - sectionid: "install"
     url: "/install/"
     title: "Install"
+  - sectionid: "tutorial"
+    url: "/tutorial/"
+    title: "Tutorial"
