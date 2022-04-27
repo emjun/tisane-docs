@@ -2,14 +2,14 @@ nav:
   - title: Getting Started
     pages:
     - home
-    - team
+    # - team
     - research
 
-  - title: Examples
-    pages:
-    - cheatsheet
-    - font-awesome
-    - bootstrap
+  # - title: Examples
+  #   pages:
+  #   - cheatsheet
+  #   - font-awesome
+  #   - bootstrap
 team:
   - name: Eunice Jun
     website: https://homes.cs.washington.edu/~emjun
