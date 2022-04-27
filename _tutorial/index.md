@@ -1,7 +1,7 @@
 ---
 title: Using Tisane
 permalink: /tutorial/home/
-redirect_from: /tutorial/index.html
+redirect_from: /tutorial/index.html, /tutorial/
 layout: tutorial
 ---
 Tisane is a tool for authoring generalized linear models. There are five steps to

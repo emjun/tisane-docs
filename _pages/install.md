@@ -8,7 +8,7 @@ statistical relationships in study designs. After providing a study design
 specification in the Tisane domain-specific language (DSL), the Tisane GUI
 guides you through the process of generating an appropriate model.
 
-<!-- ![The Tisane GUI](https://github.com/emjun/tisane/raw/main/examples/tutorial_screenshots/tisane_gui.png?raw=true) -->
+![The Tisane GUI](https://github.com/emjun/tisane/raw/main/examples/tutorial_screenshots/tisane_gui.png?raw=true)
 
 The resulting
 model is written in Python, and you can run it to get results that answer your

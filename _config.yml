@@ -55,6 +55,14 @@ defaults:
     seo:
       type: "WebPage"
 - scope:
+    path: _tutorial
+    type: tutorial
+  values:
+    layout: tutorial
+    sectionid: tutorial
+    seo:
+      type: "WebPage"
+- scope:
     path: _docs
     type: docs
   values:
@@ -74,5 +82,8 @@ collections:
     permalink: /:path/
     output: true
   about:
+    permalink: /:collection/:path/
+    output: true
+  tutorial:
     permalink: /:collection/:path/
     output: true

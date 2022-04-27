@@ -2,8 +2,8 @@
 title: Using Tisane in a Jupyter Notebook
 permalink: /tutorial/notebook/
 redirect_from: /tutorial/notebook.html
-layout: tutorial
 ---
+
 You can create your study design specification, launch the Tisane GUI, and run the model script all inside a Jupyter notebook!
 
 This requires a couple of extra steps, but if you're used to running data analyses in Jupyter notebooks, Tisane will integrate all the more smoothly into
@@ -35,10 +35,10 @@ python -m ipykernel install --name <MY-KERNEL-NAME>
 ### Opening the notebook
 Once you've created your kernel, you can run `jupyter notebook`. Open up any notebook, and go to the menu: `Kernel > Change kernel`, and choose `<MY-KERNEL-NAME>` (whatever you called it) from the list.
 
-![You can change the kernel of a Jupyter notebook by going to the menu and choosing Kernel > Change kernel, and then selecting a kernel from the list.](examples/tutorial_screenshots/change_kernel.png?raw=true)
+![You can change the kernel of a Jupyter notebook by going to the menu and choosing Kernel > Change kernel, and then selecting a kernel from the list.](https://github.com/emjun/tisane/raw/main/examples/tutorial_screenshots/change_kernel.png?raw=true)
 
 Then you should be good to go! After importing Tisane in your notebook, all five steps of using Tisane can be completed within the notebook itself.
 
 An example showing the GUI running in a jupyter notebook from `examples/Animal_Science/pigs.ipynb`:
 
-![The Tisane GUI running in the output of the Jupyter notebook examples/Animal_Science/pigs.ipynb](examples/tutorial_screenshots/query_tisane_in_jupyter.png?raw=true)
+![The Tisane GUI running in the output of the Jupyter notebook examples/Animal_Science/pigs.ipynb](https://github.com/emjun/tisane/raw/main/examples/tutorial_screenshots/query_tisane_in_jupyter.png?raw=true)
