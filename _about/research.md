@@ -2,7 +2,6 @@
 title: Research
 permalink: /about/research/
 redirect_from: /about/research.html
-layout: page
 ---
 
 (Blurb about research about Tisane)
