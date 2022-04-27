@@ -6,7 +6,7 @@ main:
     url: "/install/"
     title: "Install"
   - sectionid: "tutorial"
-    url: "/tutorial/"
+    url: "/tutorial/home/"
     title: "Tutorial"
   - sectionid: "about"
     url: "/about/home/"
