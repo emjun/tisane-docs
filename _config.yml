@@ -74,7 +74,7 @@ defaults:
 collections:
   docs:
     permalink: /:collection/:path/
-    output: true
+    output: false
   posts:
     permalink: /blog/:year/:month/:day/:title/
     output: true
