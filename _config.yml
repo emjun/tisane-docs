@@ -2,8 +2,7 @@
 title: Tisane
 email: emjun@cs.washington.edu
 description: >
-  Jekyll Template for Project Websites
-  providing documentation and blog post pages.
+  Interactive system for authoring GLMs and GLMMs
 lang: en-US
 
 baseurl: "" # the subpath of your site, e.g. /blog/
