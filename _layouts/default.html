@@ -2,7 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">   
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
 {% include head.html %}
 
@@ -18,6 +18,21 @@
 
     {% include footer.html %}
     {% include js_files.html %}
+    <script>
+    $(document).ready(function(){
+        if ($("#accordion").length) {
+            var sidebar = document.getElementById("accordion").parentElement;
+            console.log("sidebar", sidebar);
+            window.onload = function() {
+              var offsets = sidebar.getBoundingClientRect();
+              var top = offsets.top;
+              sidebar.style.top = top + "px";
+              sidebar.style.position = "-webkit-sticky";
+              console.log("hello", top, sidebar);
+            }
+        }
+    })
+    </script>
 </body>
 
 </html>

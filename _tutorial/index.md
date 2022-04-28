@@ -4,8 +4,46 @@ permalink: /tutorial/home/
 redirect_from: /tutorial/index.html, /tutorial/
 layout: tutorial
 ---
-Tisane is a tool for authoring generalized linear models. There are five steps to
-authoring your model:
+Welcome to Tisane, a data analysis tool that focuses on supporting conceptual
+statistical relationships in study designs. After providing a study design
+specification in the Tisane domain-specific language (DSL)
+
+```python
+import tisane as ts
+import pandas as pd
+
+df = pd.read_csv("pigs.csv")
+
+week = ts.SetUp("Time", order=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], cardinality=12)
+pig = ts.Unit("Pig", cardinality=72)  # 72 pigs
+litter = ts.Unit("Litter", cardinality=21)  # 21 litters
+vitamin_e = pig.ordinal(
+    "Evit", order=["Evit000", "Evit100", "Evit200"], number_of_instances=1
+)
+copper = pig.ordinal("Cu", order=["Cu000", "Cu035", "Cu175"], number_of_instances=1)
+weight = pig.numeric("Weight", number_of_instances=week)
+feed = pig.numeric("Feed consumption", number_of_instances=week)
+
+week.causes(weight)
+pig.nests_within(litter)
+
+design = ts.Design(dv=weight, ivs=[week]).assign_data(df)
+
+ts.infer_statistical_model_from_design(design=design)
+```
+
+the Tisane GUI
+guides you through the process of generating an appropriate model.
+
+![The Tisane GUI](https://github.com/emjun/tisane/raw/main/examples/tutorial_screenshots/tisane_gui.png?raw=true)
+
+The resulting
+model is written in Python, and you can run it to get results that answer your
+research questions.
+
+## Authoring a Model
+
+There are five steps to authoring your model:
 
 1. Specify your **variables** of interest and their **relationships.**
 2. Create a study design `tisane.Design` with your variables.

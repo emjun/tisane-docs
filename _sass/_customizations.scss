@@ -6,3 +6,10 @@ iframe {
     overflow: hidden;
   }
 }
+
+
+div#accordion.panel-group {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
