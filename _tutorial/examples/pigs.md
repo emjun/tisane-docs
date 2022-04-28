@@ -13,7 +13,7 @@ This example includes the following concepts in Tisane:
 
 If you want to run this example yourself, check it out in the [Tisane repository](https://github.com/emjun/tisane/tree/main/examples/Animal_Science)!
 
-<iframe src="/notebooks/pigs/" id="target" frameborder="0" scrolling="no" style="width:100%;" markdown="0"></iframe>
+<iframe src="/notebooks/pigs.html" id="target" frameborder="0" scrolling="no" style="width:100%;" markdown="0"></iframe>
 
 <script markdown="0">
     // Increase the height of the iframe
