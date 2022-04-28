@@ -9,7 +9,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://tisane-stats.org # the base hostname & protocol for your site
 git_address: https://github.com/emjun/tisane # the actual tisane repo
 git_edit_address: https://github.com/emjun/tisane-docs/blob/gh-pages # where the site lives
-remote_theme: aksakalli.github.io/jekyll-doc-theme@gh-pages
+# remote_theme: aksakalli.github.io/jekyll-doc-theme@gh-pages
 # theme options from https://bootswatch.com/3/
 # comment out this to use default Bootstrap
 bootwatch: paper # cerulean cosmo custom cyborg darkly flatly journal lumen readable sandstone simplex slate solar spacelab superhero united yeti
@@ -31,6 +31,10 @@ exclude:
   - .gitignore
   - README.md
   - vendor
+  - _notebooks/pigs.csv
+  - _notebooks/__pycache__
+  - _notebooks/model.py
+  - _notebooks/pigs.ipynb
 timezone: America/Los Angeles
 defaults:
 - scope:
@@ -84,5 +88,8 @@ collections:
     permalink: /:collection/:path/
     output: true
   tutorial:
+    permalink: /:collection/:path/
+    output: true
+  notebooks:
     permalink: /:collection/:path/
     output: true

@@ -2,7 +2,7 @@
 title: Research
 permalink: /about/research/
 redirect_from: /about/research.html
-layout: page
+layout: about
 ---
 ## Publications
 We're excited to present Tisane at CHI 2022, in New Orleans!

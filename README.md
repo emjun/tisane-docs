@@ -2,26 +2,28 @@
 
 TODOs:
 
- - [ ] Fill out outline in `_about/research.md`
- - [ ] Expand blurb in `_about/index.md`
+ - [x] Fill out outline in `_about/research.md`
+ - [x] Expand blurb in `_about/index.md`
+ - [ ] Reorganize some of the material from install to tutorial
+ - [ ]
  - [ ] Create layout for Tisane team members
  - [ ] Investigate a way to embed jupyter notebooks (at least as a patch for writing up more examples lol)
 
 
 Site structure (pages that have yet to be created have `()` after their relative URL):
 
- - [ ] `/` (`index.md`):
- - [ ] `/about` (`_about`)
-  - [ ] `/about/home/` (`/_about/index.md`): landing page for the About section
-  - [ ] `/about/team/` (`/_about/team_members.md`): short bios for all the Tisane developers
-  - [ ] `/about/research/` (`/_about/research.md`): about the formal research that has been done/will be done/maybe future work, as well as how to cite the project
+ - [x] `/` (`index.md`):
+ - [x] `/about` (`_about`)
+   - [x] `/about/home/` (`/_about/index.md`): landing page for the About section
+   - [ ] `/about/team/` (`/_about/team_members.md`): short bios for all the Tisane developers
+   - [x] `/about/research/` (`/_about/research.md`): about the formal research that has been done/will be done/maybe future work, as well as how to cite the project
  - [x] `/docs`: this is actually hosted in the tisane repo
  - [ ] `/install/` (`/_pages/install.md`): detailed installation instructions
  - [ ] `/tutorial/` (need to make into its own section): detailed tutorial
-  - [ ] `/tutorial/home/` (): landing page for the Tutorial section, explaining the options
-  - [ ] `/tutorial/cli/` (): tutorial for using Tisane from the command line
-  - [ ] `/tutorial/notebook/` (): tutorial for using Tisane with Jupyter notebooks
- - [ ] `/examples` (): (this is kind of a stretch goal, might be nice to have at least one example)
+   - [ ] `/tutorial/home/` (`/_tutorial/index.md`): landing page for the Tutorial section, explaining the options
+   - [ ] `/tutorial/cli/` (`/_tutorial/cli.md`): tutorial for using Tisane from the command line
+   - [ ] `/tutorial/notebook/` (`/_tutorial/notebook.md`): tutorial for using Tisane with Jupyter notebooks
+   - [ ] `/tutorial/pigs/` (): the pigs example
 
 ## Important files
 

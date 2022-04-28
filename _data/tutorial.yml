@@ -4,3 +4,6 @@ nav:
     - home
     - cli
     - notebook
+  - title: Examples
+    tutorials:
+    - pigs
