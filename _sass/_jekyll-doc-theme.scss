@@ -6,6 +6,7 @@ html {
   body {
     padding-top: $navbar-height + $navbar-margin-bottom;
     margin-bottom: 46px;
+    font-family: "IBM Plex Sans"
   }
 
   .navbar-brand{
@@ -18,12 +19,13 @@ html {
 
 
   .header-container {
-    background-color: black;
-    background: url('../img/bg.jpg') no-repeat 50% 0;
+    background-color: #9494ff;
+    // background: url('../img/bg.jpg') no-repeat 50% 0;
     color: #fff;
 
     h1 {
       color: #fff;
+      font-family: "IBM Plex Sans"
     }
     // background-attachment: fixed;
     background-size: cover;
